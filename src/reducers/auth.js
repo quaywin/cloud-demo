@@ -21,7 +21,7 @@ export const requestLogin = () => (dispatch) => {
         status: data.status
       }));  
     }else {
-      window.open(data.authUrl);
+      window.open(data.authUrl, '_self');
     }
   })
 }
